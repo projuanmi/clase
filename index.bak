@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos meter y progress</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main>
         <header class="page-header">
             <h1>Ejemplos de <span>progress</span> y <span>meter</span></h1>
-            <p>Explora como usar las etiquetas <code>&lt;meter&gt;</code> y <code>&lt;progress&gt;</code> para mostrar
-                valores y progreso de forma visual.</p>
+            <p>Explora como usar las etiquetas <code>&lt;meter&gt;</code> y <code>&lt;progress&gt;</code> para mostrar valores y progreso de forma visual.</p>
         </header>
 
         <section class="card">
             <h2>Etiqueta meter</h2>
             <p>La etiqueta <code>&lt;meter&gt;</code> se utiliza para mostrar un valor dentro de un rango conocido.</p>
-            <p>Se puede usar para representar niveles de batería, valoraciones y más.</p>
+            <p>Se puede usar para representar niveles de batería, progreso de descarga, valoraciones y más.</p>
 
             <div class="card-body">
                 <div class="info-block">
                     <p><strong>Parámetros:</strong></p>
                     <ul>
-                        <li><strong>value</strong> --> Valor actual del medidor.</li>
-                        <li><strong>min</strong> --> Valor mínimo que puede alcanzar el medidor.</li>
-                        <li><strong>max</strong> --> Valor máximo que puede alcanzar el medidor.</li>
-                        <li><strong>low</strong> (Opcional) --> Umbral de valor bajo.</li>
-                        <li><strong>high</strong> (Opcional) --> Umbral de valor alto.</li>
-                        <li><strong>optimum</strong> (Opcional) --> Valor óptimo del medidor.</li>
+                        <li><strong>value</strong> --&gt; Valor actual del medidor.</li>
+                        <li><strong>min</strong> --&gt; Valor mínimo que puede alcanzar el medidor.</li>
+                        <li><strong>max</strong> --&gt; Valor máximo que puede alcanzar el medidor.</li>
+                        <li><strong>low</strong> (Opcional) --&gt; Umbral de valor bajo.</li>
+                        <li><strong>high</strong> (Opcional) --&gt; Umbral de valor alto.</li>
+                        <li><strong>optimum</strong> (Opcional) --&gt; Valor óptimo del medidor.</li>
                     </ul>
                 </div>
 
                 <div class="field-group">
                     <label for="bateria">Nivel de batería:</label>
                     <meter id="bateria" value="80" min="0" low="26" high="80" max="100" optimum="80"></meter>
-                    <p class="status-text" id="texto-bateria">80% de batería</p>
+                    <p class="status-text">25% de batería</p>
                 </div>
             </div>
         </section>
@@ -50,21 +47,18 @@
                 <div class="info-block">
                     <p><strong>Parámetros:</strong></p>
                     <ul>
-                        <li><strong>value</strong> --> Valor actual del progreso.</li>
-                        <li><strong>max</strong> --> Valor máximo que puede alcanzar el progreso.</li>
+                        <li><strong>value</strong> --&gt; Valor actual del progreso.</li>
+                        <li><strong>max</strong> --&gt; Valor máximo que puede alcanzar el progreso.</li>
                     </ul>
                 </div>
 
                 <div class="field-group">
                     <label for="descarga">Progreso de descarga:</label>
                     <progress id="descarga" value="25" max="100"></progress>
-                    <p class="status-text" id="texto-descarga">25% completado</p>
+                    <p class="status-text">25% completado</p>
                 </div>
             </div>
         </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
